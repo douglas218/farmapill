@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+html, body, div, span, input, h1, h2, h3, p, ul, li, a, button, section  {
+	padding: 0px;
+  margin: 0px;
+  border: 0;
+  font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  margin:0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  outline: none;
+}
+
+body {
+  margin: 0px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  background-color: #1C1F62;
+}
+
+.app-container-login {
+  /* text-align: center;
+  align-content: center; */
+  margin: 0 auto;
+  width: 74%;
+  max-width: 500px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.app-container-dashboard {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.btn-base {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 9px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+
+  border: none;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin-bottom: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.header-msg {    
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+}
+
+.header-nome {
+  border-bottom: 1px solid #E53F63;
+}
+
+.header-voltar {
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}

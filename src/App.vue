@@ -1,28 +1,63 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="mobile">
+      <transition mode="out-in">
+        <router-view :evtNovoRemedio.sync="evtNovoRemedio"></router-view> 
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import './App.css';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
+  },
+  data() {
+    return {
+      evtNovoRemedio: 0,
+    }
+  },
+  watch: {
+    evtNovoRemedio() {
+      this.$alert("Remédio cadastrado com sucesso!", '', 'success');
+    }
   }
 }
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+  display: block;
+  width: 100%;
+}
+
+#mobile {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.router-link-exact-active {
+  color: #4b8;
+  font-weight: bold;
+}
+
+.v-enter,
+.v-leave-to {
+  transform: translate3d(-20px, 0, 0);
+  opacity: 0;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all .3s;
 }
 </style>
