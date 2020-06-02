@@ -35,10 +35,10 @@
           <label for="domingo" class="chk-label">Domingo</label>
         </div>
         <div>
-          <input id="terca_feira" type="checkbox" class="boxestilizado box-red" />
+          <input id="terca_feira" type="checkbox" class="boxestilizado box-red" checked />
           <label for="terca_feira" class="chk-label">Terça-feira</label>
 
-          <input id="quinta_feira" type="checkbox" class="boxestilizado box-red" />
+          <input id="quinta_feira" type="checkbox" class="boxestilizado box-red" checked />
           <label for="quinta_feira" class="chk-label">Quinta-feira</label>
 
           <input id="sabado" type="checkbox" class="boxestilizado box-red" />
